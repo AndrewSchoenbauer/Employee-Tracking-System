@@ -6,27 +6,24 @@ VALUES ("engineering"),
 
 SELECT * FROM DEPARTMENT;
 
--- engineering department has engineers and project managers and engineering manager
--- finance department has accountants and managers
---  marketing department has product marketing manager, marketing lead
 INSERT INTO roles (title, salary, department_id)
-VALUES ("software engineer", 120000, 1),
-    ("project manager", 90000, 1),
-    ("engineering manager", 225000, 1),
-    ("accountant", 70000, 2),
-    ("accounting manager", 120000, 2),
-    ("product marketing manager", 50000, 3),
-    ("marketing lead", 150000, 3),
-    ("sales rep", 85000, 4);
+VALUES ("Software Engineer", 120000, 1),
+    ("Project Manager", 90000, 1),
+    ("Engineering Manager", 225000, 1),
+    ("Accountant", 70000, 2),
+    ("Accounting Manager", 120000, 2),
+    ("Product Marketing Manager", 50000, 3),
+    ("Marketing Lead", 150000, 3),
+    ("Sales Rep", 85000, 4);
 
 SELECT * FROM roles;
 
 INSERT INTO employee (first_name, last_name, roles_id, manager_id)
-VALUES ("Spike", "Bulldog", 3, NULL),
-    ("Tom", "Cat", 5, NULL),
-    ("Jerry", "Mouse", 6, NULL),
-    ("Mickey", "Mouse", 1, 1),
-    ("Toots", "Mouse", 4, 2),
+VALUES ("Matt", "Damon", 3, NULL),
+    ("Brad", "Pitt", 5, NULL),
+    ("Tom", "Holland", 6, NULL),
+    ("Scarlett", "Johannson", 1, 1),
+    ("Matthew", "Mcchonaghay", 4, 2),
     ("Bob", "Ross", 7, 3);
 
 SELECT * FROM employee;
